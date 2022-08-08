@@ -1,0 +1,22 @@
+<h1 class="centered">Food List</h1>
+<div class="tableCont">
+  <table class="table main">
+    <thead class="tabHeaders">
+      <tr>
+        <th scope="col" style="width: 20%">Food Item</th>
+        <th scope="col" style="width: 20%">Protein (g)</th>
+        <th scope="col" style="width: 20%">Fat (g)</th>
+        <th scope="col" style="width: 20%">Carbohydrate (g)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let info of foods">
+        <th scope="row">{{info.foodItem}}</th>
+        <td>{{info.protein}}</td>
+        <td>{{info.fat}}</td>
+        <td>{{info.carb}}</td>
+        <td><button type="button" class="btn btn-success" (click)="getDetails(info)">ADD</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,81 @@
+ /* The sidebar menu */
+ .sidenav 
+ {
+    height: 300px;
+    width: 160px; /* Set the width of the sidebar */
+    position: absolute;
+    z-index: 1; /* Stay on top */
+    top: 60px;
+    left: 0px;
+    background-color: rgb(0, 183, 255); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+  
+/* The navigation menu links */
+.sidenav a 
+{
+  padding: 30px 8px 0px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(219, 255, 110);;
+  display: block;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover 
+{
+  color: #f1f1f1;
+}
+  
+/* Style page content */
+.main 
+{
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.header
+{
+  position: relative;
+  background-color: rgb(77, 110, 242);
+  height: 60px;
+}
+
+.headertext
+{
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(234, 210, 89);
+}
+
+.headerlogo
+{
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.dateAndTime
+{
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: larger;
+  font-weight: bold;
+  color:rgb(234, 210, 89);
+}
+
+.centered
+{
+    margin-left: 160px;
+    text-align: center;
+}

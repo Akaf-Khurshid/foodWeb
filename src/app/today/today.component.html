@@ -1,0 +1,46 @@
+<!-- Table for list of today's meals -->
+<h1 class="centered">Today's Meals</h1>
+<div class="tableCont">
+  <table class="table main">
+    <thead class="tabHeaders">
+      <tr>
+        <th scope="col">Food Item</th>
+        <th scope="col">Protein (g)</th>
+        <th scope="col">Fat (g)</th>
+        <th scope="col">Carbohydrate (g)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let info of todayList ; index as i">
+        <th scope="row">{{info.foodItem}}</th>
+        <td>{{info.protein}}</td>
+        <td>{{info.fat}}</td>
+        <td>{{info.carb}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="onClick(i)">REMOVE</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Total macros count -->
+<h2 class="centered">Total Daily Macros</h2>
+<div class="tableCont">
+  <table class="table main">
+    <thead class="tabHeaders">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Protein (g)</th>
+        <th scope="col">Fat (g)</th>
+        <th scope="col">Carbohydrate (g)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of totalMacros">
+        <td><b>Total Macros</b></td>
+        <td>{{i.sumProtein}}</td>
+        <td>{{i.sumFat}}</td>
+        <td>{{i.sumCarbs}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
