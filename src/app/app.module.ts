@@ -5,12 +5,14 @@ import { AllFoodsService } from './all-foods.service';
 import { AppRoutingModule, routingComponets } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgChartsModule } from 'ng2-charts';
+import { AddFoodComponent } from './add-food/add-food.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponets
+    routingComponets,
+    AddFoodComponent
   ],
   imports: [
     BrowserModule,
