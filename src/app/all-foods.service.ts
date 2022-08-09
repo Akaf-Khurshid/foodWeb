@@ -18,6 +18,19 @@ export class AllFoodsService {
 
   foodItem: Food[] = [];
 
+  foodDB: Food[] = [
+    {"name": "Banana", "protein": 1, "fat": 0, "carb": 28},
+    {"name": "Hamburger", "protein": 24, "fat": 28, "carb": 45},
+    {"name": "Chicken Breast", "protein": 53, "fat": 6, "carb": 1},
+    {"name": "Apple", "protein": 1, "fat": 0, "carb": 25},
+    {"name": "Fried Chicken", "protein": 14, "fat": 25, "carb": 7},
+    {"name": "Ramen Noodles", "protein": 5, "fat": 7, "carb": 27},
+    {"name": "Chicken Shawarma", "protein": 45, "fat": 17, "carb": 46},
+    {"name": "Kebab", "protein": 47, "fat": 39, "carb": 43},
+    {"name": "Beef Pho", "protein": 20, "fat": 5, "carb": 100},
+    {"name": "Beef Kofta", "protein": 26, "fat": 12, "carb": 2}
+  ];
+
   totalProtein: number = 0;
   totalFat: number = 0;
   totalCarbs: number = 0;
@@ -38,20 +51,13 @@ export class AllFoodsService {
     this.foodItem.splice(index,1);
   }
 
+  addToDB(food: Food){
+    this.foodDB.push(food);
+  }
+
   getFoodData()
   {
-    return [
-      {"foodItem": "Banana", "protein": 1, "fat": 0, "carb": 28},
-      {"foodItem": "Hamburger", "protein": 24, "fat": 28, "carb": 45},
-      {"foodItem": "Chicken Breast", "protein": 53, "fat": 6, "carb": 1},
-      {"foodItem": "Apple", "protein": 1, "fat": 0, "carb": 25},
-      {"foodItem": "Fried Chicken", "protein": 14, "fat": 25, "carb": 7},
-      {"foodItem": "Ramen Noodles", "protein": 5, "fat": 7, "carb": 27},
-      {"foodItem": "Chicken Shawarma", "protein": 45, "fat": 17, "carb": 46},
-      {"foodItem": "Kebab", "protein": 47, "fat": 39, "carb": 43},
-      {"foodItem": "Beef Pho", "protein": 20, "fat": 5, "carb": 100},
-      {"foodItem": "Beef Kofta", "protein": 26, "fat": 12, "carb": 2}
-    ];
+    return this.foodDB;
   }
 
 }
