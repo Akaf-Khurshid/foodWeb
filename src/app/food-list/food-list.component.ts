@@ -18,6 +18,7 @@ export class FoodListComponent implements OnInit {
 
   getDetails(foodInfo:any)
   {
+    console.log(foodInfo);
     this.foodItem.addToList(foodInfo);
   }
 

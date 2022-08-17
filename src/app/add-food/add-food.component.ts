@@ -12,7 +12,7 @@ export class AddFoodComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitFood(){
+  submitFood(name: string,protein: number,fat: number,carb: number){
 
   }
 

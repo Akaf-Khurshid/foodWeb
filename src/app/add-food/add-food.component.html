@@ -1,9 +1,9 @@
 <tbody>
     <tr>
-      <th scope="row">name: <input #box ></th>
-      <td>protein: <input #box ></td>
-      <td>fat: <input #box ></td>
-      <td>carb: <input #box ></td>
-      <td><button type="button" class="btn btn-success" (click)="submitFood()">ADD</button></td>
+      <th scope="row">name: <input type="text" #name ></th>
+      <td>protein: <input type="number" #protein ></td>
+      <td>fat: <input type="number" #fat ></td>
+      <td>carb: <input type="number" #carb ></td>
+      <td><button type="button" class="btn btn-success" (click)="submitFood(name.value,protein.value,fat.value,carb.value)">ADD</button></td>
     </tr>
   </tbody>
