@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllFoodsService } from '../all-foods.service';
 
 @Component({
   selector: 'app-add-food',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddFoodComponent implements OnInit {
 
-  constructor() { }
+  constructor(private foodItem:AllFoodsService) { }
 
   ngOnInit(): void {
   }
 
   submitFood(name: string,protein: string,fat: string,carb: string){
-
+    this.foodItem.addToDB({name: name,protein: Number(protein), fat: Number(fat), carb: Number(carb)})
   }
 
 }

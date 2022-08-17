@@ -1,0 +1,19 @@
+.main 
+{
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+.tableCont
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 1200px;
+}
+
+.centered
+{
+    margin-left: 160px;
+    text-align: center;
+}
