@@ -2,6 +2,9 @@
 
 foodWeb is a angular web app that allows the user to record what they eat to see their eating habits.
 
+**DEMO**
+![](images/demo.gif)
+
 **Running** <br>
 To run this anhular web app install the repo and use the `ng serve` command in the dictory using terminal.<br>
 
